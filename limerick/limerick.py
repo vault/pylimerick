@@ -69,13 +69,13 @@ def bad_rhymes(lines):
     ends = last_words(lines)
     bad = []
     if not do_rhyme(ends[2], ends[3]):
-        bad.append((2, 3))
+        bad.append((3, 4))
     if not do_rhyme(ends[0], ends[1]):
-        bad.append((0, 1))
+        bad.append((1, 2))
     if not do_rhyme(ends[1], ends[4]):
-        bad.append((1, 4))
+        bad.append((2, 5))
     if not do_rhyme(ends[0], ends[4]):
-        bad.append((0, 4))
+        bad.append((1, 5))
     return bad
 
 
